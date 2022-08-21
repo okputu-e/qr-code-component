@@ -1,0 +1,73 @@
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --l-gray: hsl(212, 45%, 89%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dk-blue: hsl(218, 44%, 22%);
+  --ff-outfit: "Outfit", sans-serif;
+  --f-size: 15px;
+  --b-radius: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--l-gray);
+  font-size: var(--f-size);
+  font-family: var(--ff-outfit);
+  color: var(--gray-blue);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code {
+  max-width: 320px;
+  padding: 1rem;
+  background-color: var(--White);
+  border-radius: var(--b-radius);
+  text-align: center;
+}
+
+.qr-code-img {
+  border-radius: var(--b-radius);
+}
+
+.qr-content {
+  padding: 0 0.5rem;
+}
+
+.qr-heading {
+  color: var(--dk-blue);
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.qr-description {
+  margin: 1rem 0;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
